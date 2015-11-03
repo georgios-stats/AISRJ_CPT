@@ -1,3 +1,13 @@
+DESCRIPTION : 
+-------------
+
+A FORTRAN implementation of AISRJ on the Bayesian 
+multiple change point analysis for point processes 
+with uknown number of change points. 
+
+It includes the British coal mine disaster data set 
+by year (1851-1962).
+
 CONTACT DETAILS :
 -----------------
 
