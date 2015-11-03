@@ -1,3 +1,17 @@
+! CONTACT DETAILS :
+
+! Georgios Karagiannis (Copyright 2012)
+! School of Mathematics, University of Bristol
+! University Walk, Bristol, BS8 1TW, UK
+! Email (current): Georgios.Karagiannis@pnnl.gov
+
+! Christophe Andrieu
+! School of Mathematics, University of Bristol
+! University Walk, Bristol, BS8 1TW, UK
+! Email: C.Andrieu@bristol.ac.uk
+
+! ----------------------------------------------------------------------
+
 module fixedupdates_mod
 
       implicit none
