@@ -1,0 +1,69 @@
+CONTACT DETAILS :
+-----------------
+
+Georgios Karagiannis
+School of Mathematics, University of Bristol
+University Walk, Bristol, BS8 1TW, UK
+Email (current): Georgios.Karagiannis@pnnl.gov
+
+Christophe Andrieu
+School of Mathematics, University of Bristol
+University Walk, Bristol, BS8 1TW, UK
+Email: C.Andrieu@bristol.ac.uk
+
+
+REQUIREMENTS :
+--------------
+
+FORTRAN compiler (tested with gfortran 4.6.3 and ifort 10 )
+
+FILES :
+-------
+
+Makefile	            :	Makefile
+
+aisrjcpt_pro.f90     :  Main program
+
+aisrjupdates_mod.f90 :  Routines related to annealing procedure
+
+fixedupdates_mod.f90 :  Fixed dimension Metropolis-Hastings updates
+
+rnggamma.f90         :  Gamma random number generator
+
+rngnormal.f          :  Gaussian random number generator
+
+mt19937ar.f	         :  Uniform random number generator
+
+algama.f             :  Gamma function (log scale)
+
+results              :  Folder for the output of the program 
+
+aisrj.exe            : Binary file  
+
+      input :
+         -NSweep=    number of iterations
+            ( default : -NSweep=2*10**5 )
+         -NBurnin=   number of burn-in iterations
+            ( default : -NBurnin=2*10**2 )
+         -Tau=       number of intermediate distributions
+            ( default : -Tau=1 )
+         -Qtype=     type of the marginal model proposal {0 | 1 | 2}
+            ( default : -Qtype=2 )
+         -Kseed=     initial number of change points (seed of the Markov chain)
+            ( default : -Kseed=3 )
+
+      output :
+         ./results/k.T#          sample of between model random parameter
+         ./results/s.T#          sample of change point locations
+         ./results/h.T#          sample of heights
+         ./results/alpha.T#      sample of alpha hyper-parameter
+         ./results/beta.T#       sample of beta hyper-parameter
+         ./results/h.T#          sample of heights
+         ./results/move.T#       sample of RJ moves e.g. " 1 2 ", if "1 -> 2"
+         ./results/AccPrRJ.T#    sample of acceptance probabilities
+         ./results/logAIW.T#     sample of AIS weights in log scale
+
+      examples :
+         aisrj.exe -Tau=10
+         
+
