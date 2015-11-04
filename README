@@ -1,7 +1,24 @@
+DESCRIPTION : 
+-------------
+
+A FORTRAN implementation of AISRJ on the Bayesian 
+multiple change point analysis for point processes 
+with uknown number of change points. 
+
+It includes the British coal mine disaster data set 
+by year (1851-1962).
+
+REFERENCES:
+-----------
+
+Karagiannis, G., & Andrieu, C. (2013). 
+Annealed importance sampling reversible jump MCMC algorithms. 
+Journal of Computational and Graphical Statistics, 22(3), 623-648.
+
 CONTACT DETAILS :
 -----------------
 
-Georgios Karagiannis
+Georgios Karagiannis (Copyright 2012)
 School of Mathematics, University of Bristol
 University Walk, Bristol, BS8 1TW, UK
 Email (current): Georgios.Karagiannis@pnnl.gov
