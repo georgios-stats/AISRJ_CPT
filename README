@@ -51,13 +51,13 @@ rnggamma.f90         :  Gamma random number generator
 
 rngnormal.f          :  Gaussian random number generator
 
-mt19937ar.f	         :  Uniform random number generator
+mt19937ar.f          :  Uniform random number generator
 
 algama.f             :  Gamma function (log scale)
 
 results              :  Folder for the output of the program 
 
-aisrj.exe            : Binary file  
+aisrj.exe            :  Binary file  
 
       input :
          -NSweep=    number of iterations
