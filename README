@@ -20,7 +20,7 @@ FORTRAN compiler (tested with gfortran 4.6.3 and ifort 10 )
 FILES :
 -------
 
-Makefile	            :	Makefile
+Makefile             :  Makefile
 
 aisrjcpt_pro.f90     :  Main program
 
