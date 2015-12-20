@@ -69,7 +69,7 @@ rnggamma.f90         :  Gamma random number generator
 
 rngnormal.f          :  Gaussian random number generator
 
-mt19937ar.f          :  Uniform random number generator
+uniformrng.f         :  Uniform random number generator
 
 algama.f             :  Gamma function (log scale)
 
@@ -101,6 +101,6 @@ aisrj.exe            :  Binary file
          ./results/logAIW.T#     sample of AIS weights in log scale
 
       examples :
-         aisrj.exe -Tau=10
+         ./aisrj.exe -Tau=10
          
 

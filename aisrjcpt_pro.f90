@@ -108,7 +108,6 @@ program aisrjcpt_pro
       integer                 :: iter
       integer                 :: jup
       integer                 :: jstar
-      integer                 :: seed
       double precision        :: u
       double precision        :: logIW
       double precision        :: AccPr
@@ -226,15 +225,8 @@ program aisrjcpt_pro
 !     START THE RANDOM NUMBER GENERATOR
 !     =================================
 
-      call system_clock(count=seed)
-      call init_genrand(seed)
+      call init_seedrng()
       do i = 1,10; call rnguniform(u); end do
-
-      write(0,*)  '  '
-      write(0,*)  'Random number generator ============================'
-      write(0,*)  '  '
-      write(0,*)  'seed                     : ', seed
-      write(0,*)  '  '
 
 !     PRIORS OF THE MODEL
 !     ===========================
